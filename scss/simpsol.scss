@@ -1,0 +1,310 @@
+@import "_param";
+@font-face {
+    font-family: 'Circe';
+    src: url('../font/Circe/circe-light.eot');
+    src: local('circe-light'), local('circe-light'), url('../font/Circe/circe-light.eot?#iefix') format('embedded-opentype'), url('../font/Circe/circe-light.woff2') format('woff2'), url('../font/Circe/circe-light.woff') format('woff'), url('../font/Circe/circe-light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circe';
+    src: url('../font/Circe/circe-regular.eot');
+    src: local('Circe'), local('Circe-Regular'), url('../font/Circe/circe-regular.eot?#iefix') format('embedded-opentype'), url('../font/Circe/circe-regular.woff2') format('woff2'), url('../font/Circe/circe-regular.woff') format('woff'), url('../font/Circe/circe-regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circe';
+    src: url('../font/Circe/circe-bold.eot');
+    src: local('Circe Bold'), local('Circe-Bold'), url('../font/Circe/circe-bold.eot?#iefix') format('embedded-opentype'), url('../font/Circe/circe-bold.woff2') format('woff2'), url('../font/Circe/circe-bold.woff') format('woff'), url('../font/Circe/circe-bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brandon Text';
+    src: url('../font/Brandon_Text/brandontext-regular.eot');
+    src: local('../font/Brandon_Text/Brandon Text Regular'), local('brandontext-regular'), url('../font/Brandon_Text/brandontext-regular.eot?#iefix') format('embedded-opentype'), url('../font/Brandon_Text/brandontext-regular.woff2') format('woff2'), url('../font/Brandon_Text/brandontext-regular.woff') format('woff'), url('../font/Brandon_Text/brandontext-regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+*,
+body {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+.wrapper {
+    // width: 100%;
+    width: 1272px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.main__style {
+    background-color: $color_white;
+}
+
+.container {
+    width: 100%;
+    padding-left: 135px;
+    // border: 1px solid green;
+}
+
+.header {
+    &__style {
+        width: 100%;
+        padding-top: 15px;
+        padding-bottom: 17px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    &__logo {
+        padding: 0 81px 0 0;
+    }
+    &__menu {}
+    &__item {
+        padding: 0 4px 0 4px;
+        font-family: $font__main;
+        font-size: 1.3rem;
+        font-weight: 700;
+        line-height: 3rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $color_blue;
+        &:hover {
+            color: $color_black;
+        }
+    }
+    &__button {
+        padding: 0 17px 0 18px;
+    }
+    &__btn {
+        width: 171px;
+        height: 44px;
+        background-color: $color_grey;
+        color: $color_white;
+        font-family: $font__main;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 3rem;
+        text-transform: uppercase;
+        border: none;
+        outline: none;
+        border-radius: 22px;
+        &:hover {
+            cursor: pointer;
+            background-color: $color_orange;
+            color: $color_black;
+        }
+    }
+    &__tel {
+        color: $color_grey;
+        font-family: Circe;
+        font-size: 1.7rem;
+        font-weight: 400;
+        line-height: 3rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        &:hover {
+            cursor: pointer;
+            color: $color_black;
+        }
+    }
+}
+
+.cover {
+    width: 100%;
+    height: 600px;
+    background-color: $color_white;
+    border-radius: 0 0 100px 100px / 0 0 0 0;
+    background-image: url(../img/bgrounds/cover_bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    &__style {
+        padding-top: 151px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    &__title {
+        width: 280px;
+        padding: 0 0 27px 0;
+        color: $color_blue;
+        font-family: $font__main;
+        font-size: 3rem;
+        font-weight: 700;
+        letter-spacing: 0.86px;
+    }
+    &__text {
+        padding: 0 0 50px 0;
+        width: 185px;
+        color: $color_text-dark;
+        font-family: $font__main;
+        font-size: 1.5rem;
+        font-weight: 400;
+        letter-spacing: 0.38px;
+    }
+    &__subtext {
+        display: block;
+        color: $color_text-light;
+        font-size: 1.5rem;
+        font-weight: 400;
+        font-style: italic;
+        letter-spacing: 0.38px;
+        line-height: normal;
+    }
+    &__buttons {
+        display: flex;
+        align-items: center;
+    }
+    &__btn {
+        width: 169px;
+        height: 57px;
+        border-radius: 28px;
+        background-color: $color_orange;
+        color: $color_text-btn;
+        font-family: $font__main;
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 3.5rem;
+        text-transform: uppercase;
+        letter-spacing: 1.03px;
+        border: none;
+        outline: none;
+        &:hover {
+            cursor: pointer;
+            background-color: $color_grey;
+            color: $color_white;
+        }
+    }
+    &__msgers {
+        padding: 0 0 0 28px;
+    }
+    &__msg-item {
+        text-decoration: none;
+        padding: 0 7px;
+    }
+    &__text-free {
+        padding: 29px 0 0 31px;
+        width: 200px;
+        color: $color_grey;
+        font-family: $font__main;
+        font-size: 1.5rem;
+        font-weight: 400;
+        letter-spacing: 0.38px;
+    }
+}
+
+.promotext {
+    &__style {
+        width: 100%;
+        display: flex;
+        padding-top: 75px;
+        padding-right: 135px;
+        padding-bottom: 33px;
+    }
+    &__alltext {
+        padding: 11px 0 0 0;
+    }
+    &__title {
+        width: 541px;
+        color: $color_blue;
+        font-family: $font__main;
+        font-size: 3rem;
+        font-weight: 400;
+        line-height: 2rem;
+    }
+    &__subtitle {
+        color: $color_blue;
+        font-family: $font__main;
+        font-size: 1.6rem;
+        font-weight: 400;
+        padding-bottom: 37px;
+    }
+    &__text {
+        width: 491px;
+        color: $color_grey;
+        font-family: $font__main;
+        font-size: 1.6rem;
+        font-weight: 400;
+        padding-bottom: 24px;
+    }
+}
+
+.about {
+    width: 100%;
+    background-color: $color_bg-about;
+    padding: 50px 0 70px 0;
+    margin: 0 auto;
+    &__style {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title {
+        width: 100%;
+        padding-right: 135px;
+        color: $color_text-blue;
+        font-family: $font__main;
+        font-size: 3rem;
+        font-weight: 400;
+        line-height: 4rem;
+        text-align: center;
+    }
+    &__subtitle {
+        width: 100%;
+        color: $color_grey;
+        font-family: $font__main;
+        font-size: 1.6rem;
+        font-weight: 700;
+        padding: 24px 135px 64px 0;
+        text-align: center;
+    }
+    &__fline-items {
+        padding: 0 135px 53px 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__fline-item {
+        // width: 315px;
+        display: flex;
+        align-items: flex-start;
+    }
+    &__icons {
+        fill: $color_text-blue;
+    }
+    &__item-text {
+        padding-left: 23px;
+        color: $color_grey;
+        font-family: $font__main;
+        font-size: 1.6rem;
+        font-weight: 400;
+        text-align: left;
+    }
+    &__sline-items {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__sline-item {}
+}
+
+.width-240 {
+    width: 240px;
+}
+
+.width-260 {
+    width: 260px;
+}
+
+.width-280 {
+    width: 280px;
+}
