@@ -291,10 +291,19 @@ body {
         text-align: left;
     }
     &__sline-items {
+        width: 100%;
+        padding: 0 150px 0 0;
         display: flex;
         justify-content: space-between;
     }
-    &__sline-item {}
+    &__sline-item {
+        display: flex;
+        align-items: flex-start;
+    }
+}
+
+.width-204 {
+    width: 204px;
 }
 
 .width-240 {
@@ -307,4 +316,248 @@ body {
 
 .width-280 {
     width: 280px;
+}
+
+.width-355 {
+    width: 355px;
+}
+
+.width-415 {
+    width: 415px;
+}
+
+.width-500 {
+    width: 500px;
+}
+
+.width-530 {
+    width: 530px;
+}
+
+.forwhom {
+    padding-top: 57px;
+    padding-bottom: 53px;
+    &__style {}
+    &__title {
+        width: 100%;
+        padding-right: 135px;
+        color: $color_grey;
+        font-family: $font__main;
+        font-size: 3rem;
+        font-weight: 400;
+        text-align: center;
+        padding-bottom: 30px;
+        line-height: 3rem;
+    }
+    &__subtitle {
+        width: 100%;
+        padding-right: 135px;
+        text-align: center;
+        color: $color_grey;
+        font-family: $font__main;
+        font-size: 1.7rem;
+        line-height: 1.7rem;
+        font-weight: 700;
+        padding-bottom: 68px;
+    }
+    &__fline-items {
+        width: 100%;
+        padding-right: 135px;
+        padding-bottom: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__fline-item {}
+    &__icons {
+        fill: $color_gold;
+    }
+    &__text {
+        padding-top: 30px;
+        color: $color_grey;
+        font-family: $font__main;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 2rem;
+        text-align: left;
+    }
+    &__sline-items {
+        display: flex;
+        padding-bottom: 47px;
+    }
+    &__sline-item {
+        width: 100%;
+    }
+    &__footer-text {
+        width: 100%;
+        padding-right: 135px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 47px;
+    }
+    &__footer-title {
+        font-family: $font__main;
+        font-size: 1.7rem;
+        font-weight: 700;
+        color: $color_gold;
+        text-transform: uppercase;
+        line-height: 1.7rem;
+        padding-bottom: 30px;
+    }
+    &__footer-subtitle {
+        font-family: $font__main;
+        color: $color_grey;
+        font-weight: 400;
+        font-size: 1.7rem;
+        line-height: 1.7rem;
+        width: 875px;
+    }
+    &__button {
+        width: 100;
+        padding-right: 135px;
+        display: flex;
+        justify-content: center;
+    }
+    &__btn {
+        width: 352px;
+        height: 44px;
+        border-radius: 22px;
+        background-color: $color_gold;
+        border: none;
+        outline: none;
+        color: $color_text-btn;
+        font-family: $font__main;
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 3rem;
+        text-transform: uppercase;
+        &:hover {
+            cursor: pointer;
+            color: $color_white;
+            background-color: $color_grey;
+        }
+    }
+}
+
+.program {
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgba(21, 174, 239, 0.1);
+    padding: 63px 0 60px 0;
+    &__style {}
+    &__title {
+        color: $color_text-blue;
+        font-family: $font__main;
+        font-size: 3rem;
+        font-weight: 400;
+        line-height: 2rem;
+        padding-bottom: 47px;
+    }
+    &__subtitle {
+        width: 530px;
+        color: $color_text-blue;
+        font-family: $font__main;
+        font-size: 1.6rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding-bottom: 35px;
+    }
+    &__list {}
+    &__items {
+        counter-reset: myCounter;
+    }
+    &__item {
+        font-family: $font__main;
+        font-size: 1.6rem;
+        font-weight: 400;
+        list-style: none;
+        position: relative;
+        padding-left: 15px;
+        &::before {
+            counter-increment: myCounter;
+            content: counter(myCounter) '.';
+            display: inline-block;
+            position: absolute;
+            left: 0px;
+            width: 5px;
+            color: $color_text-blue;
+            // text-align: right;
+        }
+    }
+    &__day {}
+    &__icons {
+        line-height: 20px;
+        fill: $color_white;
+        font-family: $font__main;
+        font-size: 1.5rem;
+        font-weight: 400;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__day-numb {
+        width: 152px;
+        height: 59px;
+        border-radius: 10px;
+        background-color: $color_text-blue;
+        padding: 10px 0 10px 15px;
+        margin: 50px 0 30px 0;
+        display: flex;
+        align-items: center;
+        color: $color_white;
+    }
+    &__day-text {
+        color: $color_grey;
+        font-family: $font__main;
+        font-size: 1.6rem;
+        line-height: 2.9rem;
+    }
+    &__day-count {
+        color: $color_white;
+        font-family: $font__main;
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 2rem;
+    }
+    &__day-items {
+        padding-left: 30px;
+        counter-reset: myCounter;
+    }
+    &__day-item {
+        font-weight: 400;
+        list-style: none;
+        position: relative;
+        padding-left: 40px;
+        &::before {
+            counter-increment: myCounter;
+            content: counter(myCounter) '.';
+            display: inline-block;
+            position: absolute;
+            left: 0px;
+            width: 5px;
+            color: $color_grey;
+            // text-align: right;
+        }
+    }
+    &__webinar {
+        padding: 20px 0 40px 21px;
+        display: flex;
+        align-items: center;
+    }
+    &__webinar-text {
+        width: 500px;
+        font-weight: 700;
+        padding-left: 18px;
+        line-height: 1.6rem;
+    }
+    // .program__line
+    &__line {
+        width: 997px;
+        height: 1px;
+        background-color: $color_text-blue;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    }
 }
