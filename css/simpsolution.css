@@ -26,80 +26,85 @@
 body {
   margin: 0 0 0 0;
   padding: 0 0 0 0;
-  box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
   font-size: 10px; }
 
 .wrapper {
-  width: 1272px;
-  height: 100%;
+  width: 100%;
   margin: 0 auto; }
 
 .main__style {
   background-color: #fff; }
 
 .container {
-  width: 100%;
-  padding-left: 135px; }
+  width: 1005px;
+  margin: 0 auto; }
 
-.header__style {
+.header {
   width: 100%;
-  padding-top: 15px;
-  padding-bottom: 17px;
-  display: flex;
-  flex-direction: row;
-  align-items: center; }
-.header__logo {
-  padding: 0 81px 0 0; }
-.header__item {
-  padding: 0 4px 0 4px;
-  font-family: "Circe";
-  font-size: 1.3rem;
-  font-weight: 700;
-  line-height: 3rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #265ce3; }
-  .header__item:hover {
-    color: #000; }
-.header__button {
-  padding: 0 17px 0 18px; }
-.header__btn {
-  width: 171px;
-  height: 44px;
-  background-color: #5b6170;
-  color: #fff;
-  font-family: "Circe";
-  font-size: 1.4rem;
-  font-weight: 400;
-  line-height: 3rem;
-  text-transform: uppercase;
-  border: none;
-  outline: none;
-  border-radius: 22px; }
-  .header__btn:hover {
-    cursor: pointer;
-    background-color: #f5aa16;
-    color: #000; }
-.header__tel {
-  color: #5b6170;
-  font-family: Circe;
-  font-size: 1.7rem;
-  font-weight: 400;
-  line-height: 3rem;
-  text-transform: uppercase;
-  text-decoration: none; }
-  .header__tel:hover {
-    cursor: pointer;
-    color: #000; }
+  margin: 0 auto; }
+  .header__style {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 17px;
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+  .header__logo {
+    padding: 0 60px 0 0; }
+  .header__item {
+    padding: 0 4px;
+    font-family: "Circe";
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 3rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #265ce3; }
+    .header__item:hover {
+      color: #000; }
+  .header__button {
+    padding: 0 20px; }
+  .header__btn {
+    width: 171px;
+    height: 44px;
+    background-color: #5b6170;
+    color: #fff;
+    font-family: "Circe";
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 3rem;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    border-radius: 22px; }
+    .header__btn:hover {
+      cursor: pointer;
+      background-color: #f5aa16;
+      color: #000; }
+  .header__tel {
+    color: #5b6170;
+    font-family: "Circe";
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 3rem;
+    text-transform: uppercase;
+    text-decoration: none; }
+    .header__tel:hover {
+      cursor: pointer;
+      color: #000; }
 
 .cover {
   width: 100%;
-  height: 600px;
+  height: 80vh;
   background-color: #fff;
   border-radius: 0 0 100px 100px / 0 0 0 0;
   background-image: url(../img/bgrounds/cover_bg.png);
-  background-position: center center;
-  background-repeat: no-repeat; }
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover; }
   .cover__style {
     padding-top: 151px;
     display: flex;
@@ -115,7 +120,7 @@ body {
     font-weight: 700;
     letter-spacing: 0.86px; }
   .cover__text {
-    padding: 0 0 50px 0;
+    padding-bottom: 50px;
     width: 185px;
     color: #30333b;
     font-family: "Circe";
@@ -169,10 +174,9 @@ body {
   width: 100%;
   display: flex;
   padding-top: 75px;
-  padding-right: 135px;
   padding-bottom: 33px; }
 .promotext__alltext {
-  padding: 11px 0 0 0; }
+  padding-top: 11px; }
 .promotext__title {
   width: 541px;
   color: #265ce3;
@@ -205,7 +209,6 @@ body {
     align-items: center; }
   .about__title {
     width: 100%;
-    padding-right: 135px;
     color: #15afef;
     font-family: "Circe";
     font-size: 3rem;
@@ -218,10 +221,10 @@ body {
     font-family: "Circe";
     font-size: 1.6rem;
     font-weight: 700;
-    padding: 24px 135px 64px 0;
+    padding: 24px 0 64px 0;
     text-align: center; }
   .about__fline-items {
-    padding: 0 135px 53px 0;
+    padding-bottom: 53px;
     width: 100%;
     display: flex;
     justify-content: space-between; }
@@ -239,7 +242,6 @@ body {
     text-align: left; }
   .about__sline-items {
     width: 100%;
-    padding: 0 150px 0 0;
     display: flex;
     justify-content: space-between; }
   .about__sline-item {
@@ -275,7 +277,6 @@ body {
   padding-bottom: 53px; }
   .forwhom__title {
     width: 100%;
-    padding-right: 135px;
     color: #5b6170;
     font-family: "Circe";
     font-size: 3rem;
@@ -285,7 +286,6 @@ body {
     line-height: 3rem; }
   .forwhom__subtitle {
     width: 100%;
-    padding-right: 135px;
     text-align: center;
     color: #5b6170;
     font-family: "Circe";
@@ -295,7 +295,6 @@ body {
     padding-bottom: 68px; }
   .forwhom__fline-items {
     width: 100%;
-    padding-right: 135px;
     padding-bottom: 50px;
     display: flex;
     justify-content: space-between;
@@ -317,7 +316,6 @@ body {
     width: 100%; }
   .forwhom__footer-text {
     width: 100%;
-    padding-right: 135px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -340,7 +338,6 @@ body {
     width: 875px; }
   .forwhom__button {
     width: 100;
-    padding-right: 135px;
     display: flex;
     justify-content: center; }
   .forwhom__btn {
@@ -459,3 +456,144 @@ body {
     background-color: #15afef;
     margin: 0 0 0 0;
     padding: 0 0 0 0; }
+
+.teacher {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 50px 0 58px 0; }
+  .teacher__title {
+    color: #5b6170;
+    font-family: "Circe";
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 2rem;
+    padding: 0 0 41px 67px; }
+  .teacher__carousel {
+    display: flex;
+    padding-bottom: 27px; }
+  .teacher__carousel-left {
+    width: 550px;
+    display: flex; }
+  .teacher__l-text {
+    width: 360px;
+    height: 400px;
+    background-color: #5b6170;
+    border-radius: 30px 0 0 30px;
+    padding: 63px 0 57px 68px; }
+  .teacher__name {
+    width: 129px;
+    color: #fff;
+    font-family: "Circe";
+    font-size: 2.6rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 3.4rem;
+    padding-bottom: 35px; }
+  .teacher__position {
+    width: 199px;
+    color: #fff;
+    font-family: "Circe";
+    font-size: 1.7rem;
+    font-weight: 300;
+    padding-bottom: 45px;
+    line-height: 2.1rem; }
+  .teacher__education {
+    width: 233px;
+    color: #fff;
+    font-family: "Circe";
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 2rem; }
+  .teacher__foto {
+    background-image: url(../img/litenko_v.jpg);
+    width: 190px;
+    height: 400px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 30px 30px 0;
+    position: relative; }
+  .teacher__soc-fb {
+    position: absolute;
+    width: 53px;
+    height: 53px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    bottom: 27px;
+    left: -27px;
+    background-color: #15afef; }
+    .teacher__soc-fb:hover {
+      cursor: pointer;
+      background-color: #fff; }
+  .teacher__carousel-right {
+    padding: 36px 0 0 40px; }
+  .teacher__experience {
+    width: 408px;
+    color: #5b6170;
+    font-family: "Circe";
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2rem;
+    padding-bottom: 20px; }
+  .teacher__certs {
+    display: flex;
+    justify-content: space-between; }
+  .teacher__cert {
+    position: relative; }
+    .teacher__cert-hover {
+      display: none; }
+    .teacher__cert:hover {
+      cursor: pointer; }
+      .teacher__cert:hover .teacher__cert-hover {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 81px;
+        height: 116px;
+        background-color: rgba(0, 0, 0, 0.3);
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+  .teacher__pagination {
+    width: 510px;
+    height: 19px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+  .teacher__item {
+    width: 12px;
+    height: 12px;
+    background-color: #5b6170;
+    border-radius: 50%;
+    margin: 0 12px; }
+    .teacher__item:hover, .teacher__item-active {
+      cursor: pointer;
+      background-color: #15afef;
+      border: none;
+      width: 20px;
+      height: 20px;
+      margin: 0 8px; }
+
+.feedback {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding-bottom: 80px; }
+  .feedback__title {
+    color: #265ce3;
+    font-family: "Circe";
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 2rem;
+    padding: 0 0 43px 66px; }
+  .feedback__carousel {
+    border: 1px solid;
+    display: flex;
+    justify-content: space-between; }
+  .feedback__left-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
