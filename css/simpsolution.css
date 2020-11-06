@@ -420,6 +420,7 @@ html {
     font-size: 1.6rem;
     line-height: 2.9rem; }
   .program__day-count {
+    padding-left: 20px;
     color: #fff;
     font-family: "Circe";
     font-size: 2rem;
@@ -590,10 +591,345 @@ html {
     line-height: 2rem;
     padding: 0 0 43px 66px; }
   .feedback__carousel {
-    border: 1px solid;
     display: flex;
     justify-content: space-between; }
-  .feedback__left-arrow {
+  .feedback__arrow-item {
+    width: 31px;
     display: flex;
     justify-content: center;
     align-items: center; }
+  .feedback__arrow {
+    fill: #000; }
+    .feedback__arrow:hover {
+      cursor: pointer;
+      fill: #606060; }
+  .feedback__slider {
+    width: 100%;
+    padding: 0 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .feedback__item {
+    width: 155px;
+    height: 302px;
+    background-image: url(../img/bgrounds/tel-bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative; }
+    .feedback__item-hover {
+      display: none; }
+    .feedback__item:hover {
+      cursor: pointer; }
+      .feedback__item:hover .feedback__item-hover {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 155px;
+        height: 302px;
+        background-color: rgba(52, 79, 147, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 22px; }
+
+.why {
+  width: 100%;
+  background-image: url(../img/bgrounds/why-bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .why__color-bg {
+    padding-top: 122px;
+    background-color: rgba(21, 175, 239, 0.9);
+    width: 100%;
+    height: 100%; }
+  .why__title {
+    width: 498px;
+    color: #fff;
+    font-family: "Circe";
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 3.5rem;
+    padding-bottom: 45px; }
+  .why__items {
+    padding-bottom: 58px; }
+  .why__item {
+    display: flex; }
+  .why__text {
+    width: 785px;
+    color: #fff;
+    font-family: "Circe";
+    font-size: 1.7rem;
+    font-weight: 300;
+    padding: 0 0 31px 23px; }
+  .why__icons {
+    fill: #fff; }
+  .why__button {
+    padding-bottom: 90px; }
+  .why__btn {
+    width: 169px;
+    height: 57px;
+    border-radius: 28px;
+    background-color: #ebaf04;
+    color: #5b6170;
+    font-family: "Circe";
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 3.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1.03px;
+    border: none;
+    outline: none; }
+    .why__btn:hover {
+      cursor: pointer;
+      background-color: #5b6170;
+      color: #fff; }
+
+.job {
+  width: 100%;
+  background-color: #fff;
+  padding: 68px 0 41px 0;
+  margin: 0 auto; }
+  .job__title {
+    margin: 0 auto;
+    width: 300px;
+    color: #15afef;
+    font-family: "Circe";
+    font-size: 3rem;
+    font-weight: 400;
+    padding-bottom: 39px;
+    text-align: center;
+    line-height: 3.6rem; }
+  .job__subtitle {
+    margin: 0 auto;
+    width: 475px;
+    color: #5b6170;
+    font-family: "Circe";
+    font-size: 1.7rem;
+    line-height: 1.7rem;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 50px; }
+  .job__items {
+    display: flex;
+    justify-content: space-between; }
+  .job__icons {
+    fill: #ebaf04; }
+  .job__text {
+    width: 250px;
+    color: #5b6170;
+    font-family: "Circe";
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 2rem;
+    text-transform: uppercase;
+    padding-top: 35px;
+    padding-bottom: 25px; }
+  .job__subtext {
+    width: 271px;
+    color: #5b6170;
+    font-family: "Circe";
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2rem;
+    padding-bottom: 65px; }
+  .job__test {
+    width: 100%;
+    color: #5b6170;
+    font-family: "Circe";
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 2rem;
+    text-transform: uppercase;
+    padding-bottom: 25px;
+    text-align: center;
+    padding-bottom: 30px; }
+  .job__offer {
+    width: 494px;
+    margin: 0 auto;
+    color: #15afef;
+    font-family: "Circe";
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 2rem;
+    text-transform: uppercase;
+    padding-bottom: 25px;
+    text-align: center;
+    padding-bottom: 30px; }
+  .job__footer-items {
+    display: flex;
+    justify-content: flex-start; }
+  .job__left-item {
+    width: 386px;
+    height: 113px;
+    border-radius: 5px;
+    background-color: #15afef;
+    margin-right: 20px;
+    padding: 29px 0 28px 25px;
+    color: #fff;
+    font-family: "Circe";
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2rem;
+    text-align: left; }
+  .job__right-item {
+    width: 600px;
+    height: 180px;
+    border-radius: 5px;
+    background-color: #5b6170;
+    padding: 29px 10px 27px 31x; }
+  .job__item-text {
+    width: 560px;
+    padding: 25px 0 0 31px;
+    color: #fff;
+    font-family: "Circe";
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2rem;
+    text-align: left; }
+
+.form {
+  width: 100%;
+  background-image: url(../img/bgrounds/form-bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .form__color-bg {
+    width: 100%;
+    height: 373px;
+    padding-top: 72px;
+    background-color: rgba(38, 92, 227, 0.84); }
+  .form__style {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1; }
+  .form__title {
+    width: 297px;
+    color: #fff;
+    font-family: "Circe";
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 3.5rem;
+    text-align: center;
+    padding-bottom: 61px; }
+  .form__inputs {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 35px; }
+  .form__input {
+    width: 302px;
+    height: 44px;
+    border-radius: 22px;
+    background-color: #fff;
+    padding: 16px 0 13px 21px;
+    color: #23262d;
+    font-family: "Circe";
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2rem;
+    border: none;
+    outline: none; }
+  .form__btn {
+    width: 145px;
+    height: 44px;
+    border-radius: 22px;
+    background-color: #ebaf04;
+    border: none;
+    outline: none;
+    color: #23262d;
+    font-family: "Circe";
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 3rem;
+    text-transform: uppercase; }
+    .form__btn:hover {
+      cursor: pointer;
+      background-color: #5b6170;
+      color: #fff; }
+  .form__arrow-top {
+    position: absolute;
+    bottom: -70px;
+    left: 47%;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #15afef;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .form__arrow-top:hover {
+      cursor: pointer; }
+      .form__arrow-top:hover .form__icons {
+        fill: #000; }
+  .form__icons {
+    fill: #fff; }
+
+.footer__style {
+  padding: 80px 0 65px 0;
+  display: flex;
+  align-items: center; }
+.footer__copy {
+  color: #265ce3;
+  font-family: "Circe";
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 5rem;
+  text-transform: uppercase;
+  padding-right: 24px; }
+.footer__btn {
+  width: 184px;
+  height: 44px;
+  border-radius: 22px;
+  background-color: #5b6170;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-family: "Circe";
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 3rem;
+  text-transform: uppercase; }
+  .footer__btn:hover {
+    cursor: pointer;
+    background-color: #ebaf04;
+    color: #5b6170; }
+.footer__tel {
+  display: block;
+  padding-left: 55px;
+  padding-right: 15px;
+  color: #5b6170;
+  font-family: "Circe";
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 5rem;
+  text-decoration: none; }
+  .footer__tel:hover {
+    cursor: pointer;
+    color: #000;
+    text-decoration: none; }
+.footer__mail {
+  display: block;
+  color: #5b6170;
+  font-family: "Circe";
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 5rem;
+  text-decoration: underline; }
+  .footer__mail:hover {
+    cursor: pointer;
+    color: #000;
+    text-decoration: none; }
+.footer__design {
+  color: #5b6170;
+  font-family: "Circe";
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 5rem;
+  padding-left: 55px;
+  padding-right: 5px; }
