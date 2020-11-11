@@ -50,6 +50,7 @@ class simple {
         this.console();
         this.certClick();
         this.pagination();
+        this.feedbackSlider();
     }
 
     certClick() {
@@ -76,7 +77,7 @@ class simple {
                         <a class="all-certs__cross" id="closemodal">&times;</a></div>
                     </div>`;
                 certsmodal.insertAdjacentHTML('beforeend', str_certs);
-                let lhref = location.href;
+                let lhref = window.location.href.replace(/#.*$/, '');
                 let imgsArr = [
                     lhref + 'img/certs/cert_01.jpg',
                     lhref + 'img/certs/cert_02.jpg',
@@ -155,6 +156,34 @@ class simple {
             }
         });
 
+
+    }
+    feedbackSlider() {
+        let i = 1;
+        for (let li of carousel.querySelectorAll('li')) {
+            li.style.position = 'relative';
+            i++;
+        }
+
+        let width = 204;
+        let count = 1;
+
+        let list = carousel.querySelector('ul');
+        let listElems = carousel.querySelectorAll('li');
+
+        let position = 0;
+
+        carousel.querySelector('#leftarrow').onclick = function() {
+            position += width * count;
+            position = Math.min(position, 0);
+            list.style.marginLeft = position + 'px';
+        };
+
+        carousel.querySelector('#rightarrow').onclick = function() {
+            position -= width * count;
+            position = Math.max(position, -width * (listElems.length - count));
+            list.style.marginLeft = position + 'px';
+        };
 
     }
 

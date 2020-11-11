@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Circe';
   src: url("../font/Circe/circe-light.eot");
@@ -630,13 +631,14 @@ html {
     font-weight: 300;
     line-height: 2rem; }
   .teacher__foto {
-    background-image: url(../img/litenko_v-1.jpg);
+    background-image: url(../img/litenko_v_1.jpg);
     width: 100%;
     height: 80vh;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative; }
+    position: relative;
+    transition: background-image 1s ease; }
   .teacher__soc-fb {
     position: absolute;
     width: 53px;
@@ -710,66 +712,99 @@ html {
       height: 20px;
       margin: 0 8px; }
 
-.feedback {
+.carousel {
+  position: relative;
   width: 100%;
-  margin: 0 auto;
-  background-color: #fff;
-  padding-bottom: 40px; }
-  .feedback__title {
-    width: 100%;
-    text-align: center;
-    color: #265ce3;
-    font-family: "Circe";
-    font-size: 3rem;
-    font-weight: 400;
-    line-height: 3rem;
-    padding: 0 0 43px 0; }
-  .feedback__carousel {
-    width: 100%;
-    display: flex;
-    justify-content: space-between; }
-  .feedback__arrow-item {
-    width: 31px;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  .feedback__arrow {
-    fill: #000; }
-    .feedback__arrow:hover {
-      cursor: pointer;
-      fill: #606060; }
-  .feedback__slider {
-    width: 100%;
-    padding: 0 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  .feedback__item {
-    display: none;
-    width: 155px;
-    height: 302px;
-    background-image: url(../img/bgrounds/tel-bg.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: relative; }
-    .feedback__item:first-child {
-      display: initial; }
-    .feedback__item-hover {
-      display: none; }
-    .feedback__item:hover {
-      cursor: pointer; }
-      .feedback__item:hover .feedback__item-hover {
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        width: 155px;
-        height: 302px;
-        background-color: rgba(52, 79, 147, 0.5);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 22px; }
+  padding: 10px 40px;
+  display: flex;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  transition: 0.2s; }
+
+.carousel img {
+  width: 155px;
+  height: 302px; }
+
+.arrow:focus {
+  outline: none; }
+
+.arrow:hover {
+  background: #ccc;
+  cursor: pointer; }
+
+.gallery {
+  width: 100%;
+  overflow: hidden; }
+
+.gallery ul {
+  height: 302px;
+  width: 9999px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transition: margin-left 250ms;
+  /* удаляем пустое пространство между элементами li, у которых установлен inline-block */
+  /* http://davidwalsh.name/remove-whitespace-inline-block */
+  font-size: 1; }
+
+.gallery li {
+  display: inline-block;
+  margin: 0 20px; }
+
+.feedback__title {
+  width: 100%;
+  text-align: center;
+  color: #265ce3;
+  font-family: "Circe";
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 3rem;
+  padding: 0 0 43px 0; }
+.feedback__carousel {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden; }
+.feedback__arrow-item {
+  width: 31px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+.feedback__arrow {
+  fill: #000; }
+  .feedback__arrow:hover {
+    cursor: pointer;
+    fill: #606060; }
+.feedback__slider {
+  padding: 0 18px;
+  display: flex;
+  transition: 0.2s; }
+.feedback__item {
+  width: 155px;
+  height: 302px;
+  background-image: url(../img/bgrounds/tel-bg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative; }
+  .feedback__item:first-child {
+    display: initial; }
+  .feedback__item-hover {
+    display: none; }
+  .feedback__item:hover {
+    cursor: pointer; }
+    .feedback__item:hover .feedback__item-hover {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 155px;
+      height: 302px;
+      background-color: rgba(52, 79, 147, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 22px; }
 
 .why {
   width: 100%;
